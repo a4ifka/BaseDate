@@ -6,6 +6,7 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +32,9 @@ public class UserActivity extends AppCompatActivity {
         descriptionBox = findViewById(R.id.year);
         delButton = findViewById(R.id.deleteButton);
         saveButton = findViewById(R.id.saveButton);
+
+        nameBox.setTextColor(Color.BLACK);
+        descriptionBox.setTextColor(Color.BLACK);
 
         sqlHelper = new DatabaseHelper(this);
         db = sqlHelper.getWritableDatabase();
