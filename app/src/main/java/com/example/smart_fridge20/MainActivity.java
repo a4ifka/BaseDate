@@ -65,7 +65,9 @@ public class MainActivity extends AppCompatActivity {
 
                 View view = super.getView(position, convertView, parent);
                 TextView text = (TextView) view.findViewById(android.R.id.text1);
+                TextView text2 = (TextView) view.findViewById(android.R.id.text2);
                 text.setTextColor(Color.BLACK);
+                text2.setTextColor(Color.BLACK);
                 return view;
             }
         };
