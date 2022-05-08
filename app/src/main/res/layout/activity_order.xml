@@ -4,79 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#469A92">
     tools:context=".OrderActivity">
 
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:text="Заказ"
-        android:textSize="43sp"
-        android:fontFamily="@font/rfdewi"
-        android:textColor="@color/black"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:layout_width="50sp"
-        android:layout_height="50sp"
-        android:background="@drawable/yandex"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="318dp"
-        tools:layout_editor_absoluteY="111dp" />
-
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:fontFamily="@font/rfdewi"
-        android:text="Яндекс еда"
-        android:textColor="@color/black"
-        android:textSize="43sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="111dp" />
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:fontFamily="@font/rfdewi"
-        android:text="Delivery club"
-        android:textColor="@color/black"
-        android:textSize="43sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="248dp" />
-
-    <ImageView
-        android:layout_width="50sp"
-        android:layout_height="50sp"
-        android:background="@drawable/delivery"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="318dp"
-        tools:layout_editor_absoluteY="248dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:fontFamily="@font/rfdewi"
-        android:text="Сбермаркет"
-        android:textColor="@color/black"
-        android:textSize="43sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="406dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="Заказ"
+            android:textSize="43sp"
+            android:fontFamily="@font/rfdewi"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:layout_width="70sp"
-        android:layout_height="50sp"
-        android:background="@drawable/cbep"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="318dp"
-        tools:layout_editor_absoluteY="406dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:fontFamily="@font/rfdewi"
+                android:text="Яндекс еда"
+                android:textColor="@color/black"
+                android:layout_weight="20"
+                android:textSize="40sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="111dp" />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:background="@drawable/yandex"
+                android:layout_weight="1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="318dp"
+                tools:layout_editor_absoluteY="111dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:fontFamily="@font/rfdewi"
+                android:text="Delivery club"
+                android:textColor="@color/black"
+                android:textSize="43sp"
+                android:layout_weight="1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="248dp" />
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:background="@drawable/delivery"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="318dp"
+                tools:layout_editor_absoluteY="248dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:fontFamily="@font/rfdewi"
+                android:text="Сбермаркет"
+                android:textColor="@color/black"
+                android:textSize="43sp"
+                android:layout_weight="10"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="406dp" />
+
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="50sp"
+                android:background="@drawable/cbep"
+                android:layout_weight="1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="318dp"
+                tools:layout_editor_absoluteY="406dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

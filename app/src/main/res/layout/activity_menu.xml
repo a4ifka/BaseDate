@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#469A92">
+    tools:context=".MenuActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:gravity="center"
+            android:text="Меню"
+            android:layout_weight="0"
+            android:textColor="@color/black"
+            android:textSize="46sp"
+            android:fontFamily="@font/rfdewi"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnProd"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_weight="1"
+                android:background="#469A92"
+                android:text="Список продуктов"
+                android:textSize="20sp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="50dp" />
+
+            <Button
+                android:id="@+id/btnSet"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_weight="1"
+                android:background="#469A92"
+                android:text="Заказать продукты"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="261dp"
+                tools:layout_editor_absoluteY="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
